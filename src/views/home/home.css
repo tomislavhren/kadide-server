@@ -1,0 +1,29 @@
+.home {
+}
+
+.home__content {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: column nowrap;
+	padding-top: 8px
+}
+
+.home__content-label-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: flex-start;
+	padding: 8px 0;
+}
+
+.home__content-label {
+	/* border-radius: 2rem;
+	border: 1px solid rgba(72,72,72, .74); */
+	color: rgba(72,72,72, .74);
+	font-size: .75rem;
+	padding: .25rem .5rem;
+	font-weight: 600;
+	line-height: 1.5;
+	text-transform: uppercase;
+	background: white;
+}

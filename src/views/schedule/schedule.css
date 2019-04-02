@@ -1,0 +1,169 @@
+.schedule {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1;
+	z-index: 9;
+}
+
+.schedule-loading {
+	display: none;
+	overflow: hidden;
+	align-self: center;
+	flex: 1;
+	padding: 48px 0;
+}
+
+.schedule-loading.is-active {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.schedule__list {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 0;
+	margin: 0;
+	flex: 1;
+	padding: 4px 0;
+	will-change: scroll-position;
+}
+
+.schedule__list-item-container {
+	list-style: none;
+	color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    line-height: 1.75;
+	letter-spacing: 0.00938em;
+	padding: 4px 8px;
+}
+
+/* .schedule__list-item {
+	padding: 8px 16px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	color: inherit;
+	font: inherit;
+	overflow: hidden;
+    border-radius: 4px;
+	background-color: #fff;
+	z-index: 1;
+} */
+
+/* .schedule__list-item .time {
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 1rem;
+	line-height: 1;
+} */
+
+/* .schedule__list-item .direction {
+	color: #757575;
+	font-size: 12px;
+} */
+
+.schedule__list-item {
+	padding: 10px 16px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	overflow: hidden;
+    border-radius: 4px;
+	background-color: #fff;
+	z-index: 1;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.schedule__list-item .departure-time {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	line-height: 1rem;
+	width: 100%;
+	padding-bottom: .75rem;
+}
+
+.schedule__list-item .departure-time .time { 
+	font-size: .85rem;
+	color: rgba(0, 0, 0, 0.64);
+}
+
+.schedule__list-item .departure-time .material-icons {
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.74);
+	margin-right: .5rem;
+}
+
+.schedule__list-item .departure-info {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	font-weight: 500;
+}
+
+.schedule__list-item .departure-info .direction {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.schedule__list-item .departure-info .direction .material-icons {
+	font-size: 1rem;
+	margin-right: .5rem;
+	color: rgba(0, 0, 0, 0.74);
+}
+
+.schedule__list-item .departure-info .direction .origin,
+.schedule__list-item .departure-info .direction .destination {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	line-height: .9rem;
+}
+
+.schedule__list-item .departure-info .direction .destination .material-icons {
+	color: #dd4b39;
+}
+
+.schedule__list-item .departure-info .time-info {
+	align-self: flex-start;
+}
+
+.schedule__list-item .departure-info .time-info [class*="departure"] {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	font-size: 1.75rem;
+	min-width: 5rem;
+	line-height: 1rem;
+}
+
+.schedule__list-item .departure-info .time-info .departure-in-future {
+	color: green;
+}
+
+.schedule__list-item .departure-info .time-info .departure-soon {
+	color: gold;
+}
+
+.schedule__list-item .departure-info .time-info .departure-left {
+	color: red;
+}
+
+.schedule__list-item .departure-info .time-info [class*="departure"] .material-icons {
+	font-size: 1.75rem;
+	margin-bottom: .25rem;
+	display: none;
+}
+
+.schedule__list-item .departure-info .time-info [class*="departure"] span:last-child {
+	font-size: 1rem;
+	margin-left: 4px;
+	font-weight: normal;
+	color: inherit
+}

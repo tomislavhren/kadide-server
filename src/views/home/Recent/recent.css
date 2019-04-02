@@ -1,0 +1,119 @@
+.recent {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 8px;
+	overflow: scroll;
+}
+
+.recent::-webkit-scrollbar {
+	display: none;
+}
+
+.recent-item__container {
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+	margin-right: 8px;
+	border-radius: 4px;
+	height: calc((100vw - 32px) * 2/5);
+	min-width: calc(100vw - 64px);
+	overflow: hidden;
+	position: relative;
+	padding: 10px 16px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	background-color: #fff;
+	z-index: 1;
+}
+
+.recent-item__dpt-time {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	line-height: 1rem;
+	width: 100%;
+	padding-bottom: .75rem;
+}
+
+.recent-item__dpt-time .time { 
+	font-size: .85rem;
+	color: rgba(0, 0, 0, 0.64);
+}
+
+.recent-item__dpt-time .material-icons {
+	font-size: 1rem;
+	color: rgba(0, 0, 0, 0.74);
+	margin-right: .5rem;
+}
+
+.recent-item .dpt-info {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	font-weight: 500;
+	flex: 1;
+}
+
+.recent-item .dpt-info .direction {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.recent-item .dpt-info .direction .material-icons {
+	font-size: 1rem;
+	margin-right: .5rem;
+	color: rgba(0, 0, 0, 0.74);
+}
+
+.recent-item .dpt-info .direction .origin,
+.recent-item .dpt-info .direction .destination {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	line-height: .9rem;
+}
+
+.recent-item .dpt-info .direction .destination .material-icons {
+	color: #dd4b39;
+}
+
+.recent-item .dpt-info .time-info {
+	align-self: center;
+}
+
+.recent-item .dpt-info .time-info [class*="dpt"] {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	font-size: 1.75rem;
+	min-width: 5rem;
+	line-height: 1rem;
+}
+
+.recent-item .dpt-info .time-info .dpt-in-future {
+	color: green;
+}
+
+.recent-item .dpt-info .time-info .dpt-soon {
+	color: gold;
+}
+
+.recent-item .dpt-info .time-info .dpt-left {
+	color: red;
+}
+
+.recent-item .dpt-info .time-info [class*="dpt"] .material-icons {
+	font-size: 1.75rem;
+	margin-bottom: .25rem;
+	display: none;
+}
+
+.recent-item .dpt-info .time-info [class*="dpt"] span:last-child {
+	font-size: 1rem;
+	margin-left: 4px;
+	font-weight: normal;
+	color: inherit
+}
